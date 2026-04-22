@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipe Vault</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <button id="add-btn">+ New Recipe</button>
+        <ul id="recipe-list"></ul>
+      </nav>
+
+      <main class="editor" id="editor" style="display: none;">
+        <div class="toolbar">
+          <button id="save-btn" class="btn-p">Save Recipe</button>
+          <button id="delete-btn" class="btn-d">Delete</button>
+        </div>
+
+        <div class="recipe-card">
+          <div class="photo-area">
+            <img id="prev-img" src="https://via.placeholder.com/150" />
+            <input type="text" id="img-url" placeholder="Paste Image URL here..." />
+          </div>
+
+          <input type="text" id="title" placeholder="Recipe Title" class="title-input" />
+
+          <div class="tabs">
+            <div class="tab active" data-tab="about">About / Info</div>
+            <div class="tab" data-tab="ingredients">Ingredients</div>
+            <div class="tab" data-tab="instructions">Instructions</div>
+          </div>
+
+          <div id="about" class="content active">
+            <textarea id="txt-about" placeholder="Links, prep time, servings, or general notes..."></textarea>
+          </div>
+          <div id="ingredients" class="content">
+            <textarea id="txt-ingredients" placeholder="List your ingredients here..."></textarea>
+          </div>
+          <div id="instructions" class="content">
+            <textarea id="txt-instructions" placeholder="Step-by-step cooking directions..."></textarea>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
