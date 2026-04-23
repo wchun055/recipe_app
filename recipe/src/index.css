@@ -207,5 +207,46 @@ input:disabled, textarea:disabled {
     box-shadow: none !important;
 }
 
-.photo-area { float: left; margin-right: 30px; width: 160px; text-align: center; }
+/* Update this section in your index.css */
+.photo-area { 
+    float: left; 
+    margin-right: 40px; /* Increased margin for better spacing */
+    margin-bottom: 20px; /* Space below the button if text wraps */
+    width: 160px; 
+    text-align: center; 
+}
+
+/* Ensure the text wraps around the photo area properly */
+#about {
+    line-height: 1.6;
+    color: #444;
+}
+
+.photo-area { 
+    float: left; 
+    margin-right: 45px; /* Added more space between photo and description */
+    margin-bottom: 20px;
+    width: 160px; 
+    text-align: center; 
+}
+
+.preview-box {
+    width: 100%;
+    min-height: 200px;
+    padding: 12px;
+    background: #fff;
+    line-height: 1.6;
+    color: #2c3e50;
+    white-space: pre-wrap; /* Keeps your line breaks from the textarea */
+}
+
+/* Automatic Link Styling */
+.recipe-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+.recipe-link:hover {
+    text-decoration: underline;
+}
 #prev-img { width: 160px; height: 160px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 10px; }
