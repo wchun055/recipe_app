@@ -10,4 +10,12 @@ module.exports = {
   module: {
     rules,
   },
+  externals: {
+    electron: 'commonjs electron',
+    fs: 'commonjs fs',
+    path: 'commonjs path'
+  },
+  resolve: {
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
+  },
 };
